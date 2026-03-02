@@ -1,0 +1,9 @@
+.container{
+    background-color: lightblue;
+    width: 250px;
+    margin: auto;
+}
+.container-1{
+    background-color: lightblue;
+    padding: 10px;
+}
