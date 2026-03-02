@@ -56,10 +56,10 @@ if (isset($_POST['add'])) {
     <?php
 
 foreach ($_SESSION['students'] as $index => $s) {
-    echo $s['id'] . " | " .
-         $s['name'] . " | " .
-         $s['email'] . " | " .
-         $s['course'] . " | " .
+    echo $s['id'] . '<span style="margin-left:20px;"></span>'.
+         $s['name'] .'<span style="margin-left:20px;"></span>'.
+         $s['email'] . '<span style="margin-left:20px;"></span>'.
+         $s['course'] . '<span style="margin-left:20px;"></span>'.
          "<a href='edit_student.php?index=$index' style='
         display: inline-block;
         background-color: #008CBA; /* Blue */
@@ -69,7 +69,7 @@ foreach ($_SESSION['students'] as $index => $s) {
         border-radius: 5px;
         font-size: 14px;
         margin: 2px;
-        transition: background-color 0.3s;'>Edit</a> | " .
+        transition: background-color 0.3s;'>Edit</a>  " .
          "<a href='home.php?delete=$index' onclick=\"return confirm('Delete this student?')\" style='
         display: inline-block;
         background-color: #d44b47; /* Blue */
