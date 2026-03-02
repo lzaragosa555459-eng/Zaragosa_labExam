@@ -1,5 +1,23 @@
 .container{
-    background-color: lightblue;
+    background-color: whitesmoke;
     width: 250px;
     margin: auto;
+    
+}
+h1,h2,h3{
+    text-align: center;
+}
+button {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid;
+}
+
+button:hover {
+    background-color: #7a7a7a;
 }
