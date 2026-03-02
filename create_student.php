@@ -1,14 +1,4 @@
-<?php
 
-    if(isset($_POST['add'])){
-       $id = $_POST['id'];
-       $name = $_POST['name'];
-       $email = $_POST['email'];
-       $course = $_POST['course'];
-
-       echo "$id, $name, $email $course";
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,12 +13,12 @@
     <div class="section">
         <div class="container"> 
             <h1>Create Student Record</h1>
-            <form method="get">
+            <form method="post" action="home.php">
                 ID Number:<input type="text" name="id">
                 Name: <input type="text" name="name">
                 Email: <input type="email" name="email">
                 Course: <input type="text" name="course">
-                <button type="submit" name="add">add</button>
+                <button type="submit" name="add">Add</button>
             </form>
             
         </div>
